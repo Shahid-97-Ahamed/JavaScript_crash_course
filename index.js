@@ -96,3 +96,34 @@
 // console.log(fruits)
 
 /*----------------------------------------------------------*/
+
+
+/*--------------------------------map----------------------------------------*/
+
+// const fruits = ["Banana","Apple","lemon","Mango","Pine Apple","Orange","Apple","Apple"];
+
+// const result = fruits.map((f)=>{
+//         if(f === "Apple" ){
+//             return "A"
+//         }
+//         else{
+//             return "N/A"
+//         }
+// })//its add new eliment in last position and gives new leanth but change fully array of eliments so be carefulllllllllllllllll
+
+// console.log(result)
+// console.log("=======================================")
+// console.log(fruits)
+
+/*----------------------------------------------------------*/
+
+/*--------------------------------reduce----------------------------------------*/
+
+const number = [1, 2, 3, 4, 5];
+
+const result = number.reduce((summation, currentValue) => summation + currentValue,0);
+
+console.log(result); // আউটপুট: 15 (এই নির্দিষ্ট Array-র জন্য সব শর্তই সত্য হবে)
+
+
+
