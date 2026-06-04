@@ -119,11 +119,56 @@
 
 /*--------------------------------reduce----------------------------------------*/
 
-const number = [1, 2, 3, 4, 5];
+// const number = [1, 2, 3, 4, 5];
 
-const result = number.reduce((summation, currentValue) => summation + currentValue,0);
+// const result = number.reduce((summation, currentValue) => summation + currentValue,0);
 
-console.log(result); // আউটপুট: 15 (এই নির্দিষ্ট Array-র জন্য সব শর্তই সত্য হবে)
+// console.log(result); // আউটপুট: 15 (এই নির্দিষ্ট Array-র জন্য সব শর্তই সত্য হবে)
+
+/*----------------------------------------------------------*/
 
 
+/*--------------------------------forEach----------------------------------------*/
+
+// const fruits = ["Banana","Apple","lemon","Mango","Pine Apple","Orange"];
+
+// fruits.forEach((fruit)=>{
+//     console.log("I want to eat "+ fruit) //forEach create a loop and give from array a single eliment
+// })
+
+/*----------------------------------------------------------*/
+
+/*----------------------------------------------------------*/
+
+
+// /*--------------------------------for...of----------------------------------------*/
+
+// const fruits = ["Banana","Apple","lemon","Mango","Pine Apple","Orange"];
+
+// for( fruit of fruits){
+//     if(fruit === "Mango"){
+//         console.log("After Get Mango,Loop will be stop")
+//         break
+//     }
+//     console.log(fruit)
+// }
+
+// /*----------------------------------------------------------*/
+// /*--------------------------------for...in----------------------------------------*/
+
+const companey ={
+    name :"AdventureAi",
+    founder:"Shahid",
+    year:2023
+}
+
+// for(eliment in companey){
+//     console.log(eliment)//its just shows companeys key
+// }
+
+for(key in companey){
+    console.log(companey[key])//its just shows companeys key
+}
+
+// /*----------------------------------------------------------*/
 
