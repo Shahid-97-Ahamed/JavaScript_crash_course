@@ -212,11 +212,48 @@ function sum(text,...rest){
    const res =rest.reduce((sum,curr)=>{
    return  sum+curr;
   },0)
-  console.log(`${text}${res}`)
+//   console.log(`${text}${res}`)
 }
 
 sum("This is the  total sum: ",1,2,45,59,25,100)
 
 /*-----------------------------------------------------------*/
+
+/* In javaScript have truthy and falsey value
+falusy value is : false,undifine,null,NaN,"",0
+and all is truthy value*/
+
+/*--------------------------------------------------*/
+
+/*------------------turanry value----------------------------*/
+const a =10
+const re = a % 2 === 0 ? "even":"odd"
+// console.log(re)
+
+/*---------------------------------------------------------------*/
+
+/*--------------------Destructuring-------------------------------------------*/
+
+
+const user ={
+    name:"Shahid",
+    age:32,
+    profession:"IT Engineer",
+    education:{
+        degree :"gradute",
+        versity:"Dhaka  University",
+        location:{
+            city:"Dhaka",
+            address:"Shabag"
+        }
+    }
+}
+
+const {education:{location:address}={}} = user
+console.log(address)
+
+/*--------------------------------------------*/
+
+
 
 
