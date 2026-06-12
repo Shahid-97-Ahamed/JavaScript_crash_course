@@ -162,13 +162,61 @@ const companey ={
     year:2023
 }
 
-// for(eliment in companey){
-//     console.log(eliment)//its just shows companeys key
-// }
+for(eliment in companey){
+    // console.log(eliment)//its just shows companeys elimentj
+}
 
 for(key in companey){
-    console.log(companey[key])//its just shows companeys key
+    // console.log(companey[key])//its just shows companeys key
 }
 
 // /*----------------------------------------------------------*/
+
+// ------------------------------object--------------------------//
+ 
+const v = "popularity";
+const mobile ={
+    name:"Apple",
+    modelNo :"Iphone16Pro",
+    color:"Gold",
+    price:"185000",
+    v
+}
+
+// console.log(Object.keys(mobile))
+// console.log(Object.values(mobile))
+// console.log(Object.entries(mobile))
+
+// mobile[v] ="100%";
+// console.log(mobile)
+
+/*----------------------------------------------------------*/
+
+/*----------------------------spread ans rest oparator---------------*/
+// spread
+const fruits = [{
+    name:"Shahid"
+},
+{
+    name:"Ahamed"
+}]
+
+const result =[...fruits]
+// console.log(fruits)
+// -----------------------------
+// console.log(result)
+
+// rest
+
+function sum(text,...rest){
+   const res =rest.reduce((sum,curr)=>{
+   return  sum+curr;
+  },0)
+  console.log(`${text}${res}`)
+}
+
+sum("This is the  total sum: ",1,2,45,59,25,100)
+
+/*-----------------------------------------------------------*/
+
 
